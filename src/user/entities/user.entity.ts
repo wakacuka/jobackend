@@ -10,4 +10,7 @@ export class UserEntity extends CoreEntity {
   @Field(() => String)
   @Column()
   email: string;
+  // @Field(() => String)
+  // @Column({ name: 'nick_name', default: 'nickname' })
+  // nickName: string;
 }
