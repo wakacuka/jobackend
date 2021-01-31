@@ -1,0 +1,40 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type CreateShopOutput {
+  ok: Boolean!
+  error: String
+}
+
+type CreateUserOutput {
+  ok: Boolean!
+  error: String
+}
+
+type UpdateUserOutput {
+  ok: Boolean!
+  error: String
+}
+
+type Query {
+  hello: String!
+}
+
+type Mutation {
+  createShop(input: CreateShopInput!): CreateShopOutput!
+  createUser(input: CreateUserInput!): CreateUserOutput!
+  updateUser(input: UpdateUserInput!): UpdateUserOutput!
+}
+
+input CreateShopInput {
+  shopName: String!
+}
+
+input CreateUserInput {
+  email: String!
+}
+
+input UpdateUserInput {
+  email: String
+}
